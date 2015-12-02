@@ -1,0 +1,282 @@
+﻿@{
+    ViewBag.Title = "NewsFlash";
+}
+<!-- News Panel -->
+<div id="myNews"></div>
+<div class="container-fluid">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-xs-9">
+                    <p><b>News</b></p>
+                </div>
+                <div class="col-xs-3">
+                    <p class="pull-right">@Html.ActionLink("View all", "News", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
+        </div>
+        <!-- News Body -->
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-2">
+                    <a href="#" class="thumbnail">
+                        <img src="http://blog.room34.com/wp-content/uploads/underdog/logo.thumbnail.png" alt="...">
+                    </a>
+                </div>
+                <div class="col-sm-7">
+                    <h2>Test News One!</h2>
+                    <p>
+                        <b>
+                            Here is the first test news for this design, it's used to test the layout of the text and if it works as intended.
+                        </b>
+                    </p>
+                </div>
+                <div class="col-sm-3 col-sm-offset-9">
+                    <p class="pull-right">@Html.ActionLink("Read More", "NewsOne", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-sm-2">
+                    <a href="#" class="thumbnail">
+                        <img src="http://blog.room34.com/wp-content/uploads/underdog/logo.thumbnail.png" alt="...">
+                    </a>
+                </div>
+                <div class="col-sm-7">
+                    <h2>Test News Two</h2>
+                    <p>
+                        <b>
+                            Here is the second test news for this design, it's used to test the text alignment. here comes som random text = Ought these are balls place mrs their times add she. Taken no great widow spoke of it small. Genius use except son esteem merely her limits. Sons park by do make on. It do oh cottage offered cottage in written. Especially of dissimilar up attachment themselves by interested boisterous. Linen mrs seems men table. Jennings dashwood to quitting marriage bachelor in. On as conviction in of appearance apartments boisterous.
+                        </b>
+                    </p>
+                </div>
+                <div class="col-sm-3 col-sm-offset-9">
+                    <p class="pull-right">@Html.ActionLink("Read More", "NewsTwo", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-sm-2">
+                    <a href="#" class="thumbnail">
+                        <img src="http://blog.room34.com/wp-content/uploads/underdog/logo.thumbnail.png" alt="...">
+                    </a>
+                </div>
+                <div class="col-sm-7">
+                    <h2>Test News Three</h2>
+                    <p>
+                        <b>
+                            Here is the third test news for this design just for population purpose. Perhaps far exposed age effects. Now distrusts you her delivered applauded affection out sincerity. As tolerably recommend shameless unfeeling he objection consisted. She although cheerful perceive screened throwing met not eat distance. Viewing hastily or written dearest elderly up weather it as. So direction so sweetness or extremity at daughters. Provided put unpacked now but bringing. Its had resolving otherwise she contented therefore. Afford relied warmth out sir hearts sister use garden. Men day warmth formed admire former simple. Humanity declared vicinity continue supplied no an. He hastened am no property exercise of. Dissimilar comparison no terminated devonshire no literature on. Say most yet head room such just easy.
+                        </b>
+                    </p>
+                </div>
+                <div class="col-sm-3 col-sm-offset-9">
+                    <p class="pull-right">@Html.ActionLink("Read More", "NewsThree", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects Panel -->
+    <div id="myProjects"></div>
+    <div class="panel panel-success slideanim">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-xs-9">
+                    <p><b>Projects</b></p>
+                </div>
+                <div class="col-xs-3">
+                    <p class="pull-right">@Html.ActionLink("View all", "Projects", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
+        </div>
+        <!-- Projects Body -->
+        <div class="panel-body">
+            <div class="jumbotron" style="padding:0">
+                <div class="thumbnail">
+                    <img src="http://www.nisville.com/images/Incognito.jpg" alt="..." />
+                </div>
+            </div>
+            <div class="panel-default">
+                <div class="row">
+                    <div class="col-xs-3">Project Name</div>
+                    <div class="col-xs-2">Start Date</div>
+                    <div class="col-xs-2">End Date</div>
+                    <div class="col-xs-2">Phase</div>
+                </div>
+                <hr />
+            </div>
+            <div class="row ">
+                <div class="col-xs-3">Tales from the Beach</div>
+                <div class="col-xs-2">2006-04-12</div>
+                <div class="col-xs-2">2008-02-18</div>
+                <div class="col-xs-2">Done</div>
+                <div class="col-xs-3">
+                    <p class="pull-right">@Html.ActionLink("Go to project", "ProjectsOne", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3">Surreal</div>
+                <div class="col-xs-2">2012-10-23</div>
+                <div class="col-xs-2">2015-06-07</div>
+                <div class="col-xs-2">Re-Mastering</div>
+                <div class="col-xs-3">
+                    <p class="pull-right">@Html.ActionLink("Go to project", "ProjectsTwo", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3">Amplified Soul</div>
+                <div class="col-xs-2">2015-07-01</div>
+                <div class="col-xs-2">2016-01-29</div>
+                <div class="col-xs-2">Mixing</div>
+                <div class="col-xs-3">
+                    <p class="pull-right">@Html.ActionLink("Go to project", "ProjectsThree", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blogs Panel -->
+    <div id="myBlogs"></div>
+    <div class="panel panel-info slideanim">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-xs-9">
+                    <p><b>Blogs</b></p>
+                </div>
+                <div class="col-xs-3">
+                    <p class="pull-right">@Html.ActionLink("View all", "Blogs", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
+        </div>
+        <!-- Blogs Body -->
+        <!-- First -->
+        <div class="row">
+            <div class="container-fluid">
+                <div class="panel panel-default col-sm-8" style="margin-bottom:0;">
+                    <div class="panel-body" style="background-color:#F2EFDC; margin-top:20px;">
+                        <div class="col-sm-12">
+                            <div class="h3">Folly words</div>
+                            <p>
+                                Folly words widow one downs few age every seven.
+                                If miss part by fact he park just shew.
+                                Discovered had get considered projection who favourable.
+                                Necessary up knowledge it tolerably.
+                                Unwilling departure education is be dashwoods or an.
+                                Use off agreeable law unwilling sir deficient curiosity instantly.
+                                Easy mind life fact with see has bore ten.
+                                Parish any chatty can elinor direct for former.
+                                Up as meant widow equal an share least.
+                            </p>
+                        </div>
+                        <div class="col-sm-4 col-sm-offset-8">
+                            <p class="pull-right">@Html.ActionLink("Read More", "BlogsOne", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+                <div class="panel panel-default col-sm-4">
+                    <div class="panel-body" style="margin-top:20px; background-color:#F2EFDC">
+                        <div class="col-sm-4">
+                            <div class="thumbnail" style="margin-top:20px;">
+                                <img class="img-responsive" style="max-height:100px" src="https://nirrep.files.wordpress.com/2014/09/incognito.jpg">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="h3">A. Penny</div>
+                            <p>
+                                Mr my ready guest ye after short at.
+                                Gave read use way make spot how nor.
+                                View fine me gone this name an rank.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Second -->
+        <div class="row">
+            <div class="container-fluid">
+                <div class="panel panel-default col-sm-8" style="margin-bottom:0;">
+                    <div class="panel-body" style="background-color:#E4E0FC">
+                        <div class="col-sm-12">
+                            <div class="h3">Needed feebly</div>
+                            <p>
+                                Needed feebly dining oh talked wisdom oppose at.
+                                Applauded use attempted strangers now are middleton concluded had.
+                                It is tried no added purse shall no on truth.
+                                Pleased anxious or as in by viewing forbade minutes prevent.
+                                Too leave had those get being led weeks blind.
+                                Had men rose from down lady able.
+                                Its son him ferrars proceed six parlors.
+                                Her say projection age announcing decisively men.
+                                Few gay sir those green men timed downs widow chief.
+                                Prevailed remainder may propriety can and.
+                            </p>
+                        </div>
+                        <div class="col-sm-3 col-sm-offset-9">
+                            <p class="pull-right">@Html.ActionLink("Read More", "BlogsTwo", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+                <div class="panel panel-default col-sm-4">
+                    <div class="panel-body" style="background-color:#E4E0FC">
+                        <div class="col-sm-4">
+                            <div class="thumbnail" style="margin-top:20px;">
+                                <img class="img-responsive" style="max-height:100px" src="https://nirrep.files.wordpress.com/2014/09/incognito.jpg">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="h3">B. Wayne</div>
+                            <p>
+                                Am of mr friendly by strongly peculiar juvenile.
+                                Unpleasant it sufficient simplicity am by friendship no inhabiting.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Third -->
+        <div class="row">
+            <div class="container-fluid">
+                <div class="panel panel-default col-sm-8" style="margin-bottom:0;">
+                    <div class="panel-body" style="background-color:#C1A7A7">
+                        <div class="col-sm-12">
+                            <div class="h3">Two assure Edward</div>
+                            <p>
+                                Two assure edward whence the was.
+                                Who worthy yet ten boy denote wonder.
+                                Weeks views her sight old tears sorry.
+                                Additions can suspected its concealed put furnished.
+                                Met the why particular devonshire decisively considered partiality.
+                                Certain it waiting no entered is.
+                                Passed her indeed uneasy shy polite appear denied.
+                                Oh less girl no walk. At he spot with five of view.
+                            </p>
+                        </div>
+                        <div class="col-sm-3 col-sm-offset-9">
+                            <p class="pull-right">@Html.ActionLink("Read More", "BlogsThree", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+                <div class="panel panel-default col-sm-4">
+                    <div class="panel-body" style="background-color:#C1A7A7">
+                        <div class="col-sm-4">
+                            <div class="thumbnail" style="margin-top:20px;">
+                                <img class="img-responsive" style="max-height:100px" src="https://nirrep.files.wordpress.com/2014/09/incognito.jpg">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="h3">C. Baine</div>
+                            <p>
+                                Surrounded affronting favourable no mr.
+                                Lain knew like half she yet joy.
+                                Off fat address attacks his besides.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

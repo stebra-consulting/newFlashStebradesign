@@ -211,6 +211,7 @@
     <Content Include="Images\Logo\stebra_logo_white_notagline.png" />
     <Content Include="Images\HomeScroll\till.png" />
     <Content Include="Images\Background\stebra_bg.jpg" />
+    <Content Include="Scripts\App.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
@@ -273,6 +274,7 @@
     <Content Include="Views\Home\ProjectsOne.cshtml" />
     <Content Include="Views\Home\ProjectsTwo.cshtml" />
     <Content Include="Views\Home\ProjectsThree.cshtml" />
+    <Content Include="Views\Home\NewsFlash.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
