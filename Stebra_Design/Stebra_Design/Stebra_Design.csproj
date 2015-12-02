@@ -261,6 +261,18 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\News.cshtml" />
+    <Content Include="Views\Home\Blogs.cshtml" />
+    <Content Include="Views\Home\Projects.cshtml" />
+    <Content Include="Views\Home\NewsOne.cshtml" />
+    <Content Include="Views\Home\NewsTwo.cshtml" />
+    <Content Include="Views\Home\NewsThree.cshtml" />
+    <Content Include="Views\Home\BlogsOne.cshtml" />
+    <Content Include="Views\Home\BlogsTwo.cshtml" />
+    <Content Include="Views\Home\BlogsThree.cshtml" />
+    <Content Include="Views\Home\ProjectsOne.cshtml" />
+    <Content Include="Views\Home\ProjectsTwo.cshtml" />
+    <Content Include="Views\Home\ProjectsThree.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

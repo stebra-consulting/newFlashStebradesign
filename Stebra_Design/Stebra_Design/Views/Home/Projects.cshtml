@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Projects";
+}
+<div class="container-fluid" style="padding-top:55px;">
+    <!-- Projects Panel -->
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-sm-10">
+                    <p><b>Projects</b></p>
+                </div>
+                <div class="col-sm-2">
+
+                </div>
+            </div>
+        </div>
+        <!-- Projects Body -->
+        <div class="panel-body">
+            <div class="jumbotron" style="padding:0">
+                <div class="thumbnail">
+                    <img src="http://www.nisville.com/images/Incognito.jpg" alt="..." />
+                </div>
+            </div>
+            <div class="panel-title">
+                <div class="row">
+                    <div class="col-sm-3 h4">Project Name</div>
+                    <div class="col-sm-2 h4">Start Date</div>
+                    <div class="col-sm-2 h4">End Date</div>
+                    <div class="col-sm-2 h4">Phase</div>
+                </div>
+                <hr />
+            </div>
+            <div class="row ">
+                <div class="col-sm-3">Tales from the Beach</div>
+                <div class="col-sm-2">2006-04-12</div>
+                <div class="col-sm-2">2008-02-18</div>
+                <div class="col-sm-2">Done</div>
+                <div class="col-sm-3">
+                    <p class="pull-right">@Html.ActionLink("Go to project", "ProjectsOne", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">Surreal</div>
+                <div class="col-sm-2">2012-10-23</div>
+                <div class="col-sm-2">2015-06-07</div>
+                <div class="col-sm-2">Re-Mastering</div>
+                <div class="col-sm-3">
+                    <p class="pull-right">@Html.ActionLink("Go to project", "ProjectsTwo", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">Amplified Soul</div>
+                <div class="col-sm-2">2015-07-01</div>
+                <div class="col-sm-2">2016-01-29</div>
+                <div class="col-sm-2">Mixing</div>
+                <div class="col-sm-3">
+                    <p class="pull-right">@Html.ActionLink("Go to project", "ProjectsThree", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
