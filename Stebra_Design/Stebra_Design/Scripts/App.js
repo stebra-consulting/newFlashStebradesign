@@ -16,7 +16,7 @@ function currentPath(currUrl) {
     $('#flashNav').html('');
     var appentString;
     switch (currUrl) {
-        case '/Home/About':
+        case '/Home/NewsFlash':
             appentString = '<li>' +
                                 '<a id="navNews" role="button">News</a>' +
                             '</li>' +
@@ -52,15 +52,17 @@ function currentPath(currUrl) {
             $('#flashNav').append(appentString);
             break;
         default:
-            appentString = '<li>' +
-                                '<a id="navNews" role="button">News</a>' +
-                            '</li>' +
-                            '<li>' +
-                                '<a id="navProjects" role="button">Projects</a>' +
-                            '</li>' +
-                            '<li>' +
-                                '<a id="navBlogs" role="button">Blogs</a>' +
-                            '</li>';
+            appentString = '<li><a href="' + rebuildedUrl + '/Home/NewsFlash' + '" role="button">NewsFlash</a></li>';
+
+                //'<li>' +
+                //                '<a id="navNews" role="button">News</a>' +
+                //            '</li>' +
+                //            '<li>' +
+                //                '<a id="navProjects" role="button">Projects</a>' +
+                //            '</li>' +
+                //            '<li>' +
+                //                '<a id="navBlogs" role="button">Blogs</a>' +
+                //            '</li>';
             $('#flashNav').append(appentString);
             LoadAnimations();
             break;

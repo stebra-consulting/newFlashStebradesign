@@ -40,3 +40,8 @@ textarea {
 .myLiPadding {
     padding-left:15px;
 }
+
+.myBottom {
+    position:absolute;
+    bottom:0;
+}
