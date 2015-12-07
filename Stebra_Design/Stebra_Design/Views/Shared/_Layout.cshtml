@@ -43,8 +43,8 @@
                         *@
                         <li><a role="button">NewsFlash</a></li>
                         @*<li><a id="navNews" role="button">Nyheter</a></li>
-                        <li><a id="navProjects" role="button">Projekt</a></li>
-                        <li><a id="navBlogs" role="button">Blogg</a></li>*@
+                            <li><a id="navProjects" role="button">Projekt</a></li>
+                            <li><a id="navBlogs" role="button">Blogg</a></li>*@
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -54,27 +54,48 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <div class="row">
-                <img src="~/Images/Logo/stebra_logo_black.png" />
-            </div>
-            <div class="row">
-                <h3>stebra consulting AB</h3>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-xs-12">
-                    <p><b>Adress:</b></p>
-                    <p>Brännkyrkagatan 95</p>
-                    <p>117 26 Stockholm</p>
+        @*<footer style="background-color:lightgrey; position:absolute; width:100%; bottom:0;">
+                <div class="row">
+                    <img src="~/Images/Logo/stebra_logo_black.png" />
                 </div>
-                <div class="col-sm-6 col-xs-12">
-                    <p class="text-right"><b>Tel:</b> 0732-613386</p>
-                    <p class="text-right"><b>Mail:</b> info@stebra.se</p>
+                <div class="row">
+                    <h3>stebra consulting AB</h3>
                 </div>
-            </div>
-        </footer>
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <p><b>Adress:</b></p>
+                        <p>Brännkyrkagatan 95</p>
+                        <p>117 26 Stockholm</p>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <p class="text-right"><b>Tel:</b> 0732-613386</p>
+                        <p class="text-right"><b>Mail:</b> info@stebra.se</p>
+                    </div>
+                </div>
+            </footer>*@
     </div>
 
+    <footer class="col-xs-12 footer" style="background-color:lightgrey; width:100%; bottom:0; position:inherit">
+
+        <div class="col-xs-12">
+            <img src="~/Images/Logo/stebra_logo_black.png" />
+        </div>
+
+        <div class="col-xs-12">
+            <h3>stebra consulting AB</h3>
+        </div>
+
+
+        <div class="col-sm-6 col-xs-12">
+            <p><b>Adress:</b></p>
+            <p>Brännkyrkagatan 95</p>
+            <p>117 26 Stockholm</p>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <p class="text-right"><b>Tel:</b> 0732-613386</p>
+            <p class="text-right"><b>Mail:</b> info@stebra.se</p>
+        </div>
+    </footer>
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>

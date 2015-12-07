@@ -2,128 +2,51 @@
     ViewBag.Title = "Blogs";
 }
 
-<div class="container-fluid" style="padding-top:55px">
+<div class="container-fluid">
     <div class="panel panel-info">
-        <div class="panel-heading">
-            <div class="row">
-                <div class="col-sm-12">
-                    <p><b>Blogs</b></p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="container-fluid">
-                <div class="panel panel-default col-sm-8" style="margin-bottom:0">
-                    <div class="panel-body" style="background-color:#F2EFDC; margin-top:20px">
-                        <div class="col-sm-12">
-                            <div class="h3">
-                                Folly words
-                            </div>
-                            <p>
-                                Folly words widow one downs few age every seven.
-                                If miss part by fact he park just shew.
-                                Discovered had get considered projection who favourable.
-                                Necessary up knowledge it tolerably.
-                                Unwilling departure education is be dashwoods or an.
-                                Use off agreeable law unwilling sir deficient curiosity instantly.
-                                Easy mind life fact with see has bore ten.
-                                Parish any chatty can elinor direct for former.
-                                Up as meant widow equal an share least.
-                            </p>
-                        </div>
-                        <div class="col-sm-3 col-sm-offset-9">
-                            <p class="pull-right">@Html.ActionLink("Read More", "BlogsOne", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
-                        </div>
-                    </div>
-                    <hr />
-                </div>
-                <div class="panel panel-default col-sm-4">
-                    <div class="panel-body" style="margin-top:20px; background-color:#F2EFDC">
-                        <div class="col-sm-4">
-                            <div class="thumbnail" style="margin-top:20px;">
-                                <img class="img-responsive" style="max-height:100px" src="https://nirrep.files.wordpress.com/2014/09/incognito.jpg">
-                            </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="h3">
-                                A. Penny
-                            </div>
-                            <p>
-                                Mr my ready guest ye after short at.
-                                Gave read use way make spot how nor.
-                                View fine me gone this name an rank.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="container-fluid">
-                <div class="panel panel-default col-sm-8" style="margin-bottom:0">
-                    <div class="panel-body" style="background-color:#E4E0FC">
-                        <div class="col-sm-12">
-                            <div class="h3">
-                                Needed feebly
-                            </div>
-                            <p>
-                                Needed feebly dining oh talked wisdom oppose at.
-                                Applauded use attempted strangers now are middleton concluded had.
-                                It is tried ﻿no added purse shall no on truth.
-                                Pleased anxious or as in by viewing forbade minutes prevent.
-                                Too leave had those get being led weeks blind.
-                                Had men rose from down lady able.
-                                Its son him ferrars proceed six parlors.
-                                Her say projection age announcing decisively men.
-                                Few gay sir those green men timed downs widow chief.
-                                Prevailed remainder may propriety can and.
-                            </p>
-                        </div>
-                        <div class="col-sm-3 col-sm-offset-9">
-                            <p class="pull-right">@Html.ActionLink("Read More", "BlogsTwo", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
-                        </div>
-                    </div>
-                    <hr />
-                </div>
-                <div class="panel panel-default col-sm-4">
-                    <div class="panel-body" style="background-color:#E4E0FC">
-                        <div class="col-sm-4">
-                            <div class="thumbnail" style="margin-top:20px;">
-                                <img class="img-responsive" style="max-height:100px" src="https://nirrep.files.wordpress.com/2014/09/incognito.jpg">
-                            </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="h3">
-                                B. Wayne
-                            </div>
-                            <p>
-                                Am of mr friendly by strongly peculiar juvenile.
-                                Unpleasant it sufficient simplicity am by friendship no inhabiting.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="h3">
-                        Needed feebly
-                    </div>
-                        <p>
 
-                    </p>
+        @*--------------------------- Panel Head ---------------------------*@
+        <div class="panel-heading">
+            <h3 class="panel-title">Blogs</h3>
+        </div>
+
+        @*--------------------------- Panel Body ---------------------------*@
+        <div class="panel-body">
+
+            @*--------------------------- Blog Artical 1 ---------------------------*@
+            <div class="col-sm-7 col-xs-12" style="background-color:#F2EFDC">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Folly words</h3>
+                        <p>
+                            Folly words widow one downs few age every seven.
+                            If miss part by fact he park just shew.
+                            Discovered had get considered projection who favourable.
+                            Necessary up knowledge it tolerably.
+                            Unwilling departure education is be dashwoods or an.
+                            Use off agreeable law unwilling sir deficient curiosity instantly.
+                            Easy mind life fact with see has bore ten.
+                            Parish any chatty can elinor direct for former.
+                            Up as meant widow equal an share least.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-sm-2 col-sm-offset-1">
+
+                <div class="row">
+                    <p class="pull-right">@Html.ActionLink("Read More", "BlogsOne", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
+
+            @*--------------------------- Blog Author 1 ---------------------------*@
+            <div class="col-sm-5 col-xs-12" style="background-color:#F2EFDC">
+                <div class="col-xs-3">
                     <div class="thumbnail" style="margin-top:20px;">
                         <img class="img-responsive" style="max-height:100px" src="https://nirrep.files.wordpress.com/2014/09/incognito.jpg">
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="h3">
-                        Mr. My
-                    </div>
+
+                <div class="col-xs-9">
+                    <h3>A. Penny</h3>
                     <p>
                         Mr my ready guest ye after short at.
                         Gave read use way make spot how nor.
@@ -131,60 +54,87 @@
                     </p>
                 </div>
             </div>
-            <hr />
 
-            <div class="row">
-                <div class="col-sm-7">
-                    Text
+            @*--------------------------- Blog Artical 2 ---------------------------*@
+            <div class="col-sm-7 col-xs-12" style="background-color:#E4E0FC">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Needed feebly</h3>
+                        <p>
+                            Needed feebly dining oh talked wisdom oppose at.
+                            Applauded use attempted strangers now are middleton concluded had.
+                            It is tried ﻿no added purse shall no on truth.
+                            Pleased anxious or as in by viewing forbade minutes prevent.
+                            Too leave had those get being led weeks blind.
+                            Had men rose from down lady able.
+                            Its son him ferrars proceed six parlors.
+                            Her say projection age announcing decisively men.
+                            Few gay sir those green men timed downs widow chief.
+                            Prevailed remainder may propriety can and.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-sm-1">
-                    Glipa
-                </div>
-                <div class="col-sm-4">
-                    Info om person eller w/e
+
+                <div class="row">
+                    <p class="pull-right">@Html.ActionLink("Read More", "BlogsTwo", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
                 </div>
             </div>
-            <hr />
-        </div> -->
-        <div class="row">
-            <div class="container-fluid">
-                <div class="panel panel-default col-sm-8">
-                    <div class="panel-body" style="background-color:#C1A7A7">
-                        <div class="col-sm-12">
-                            <div class="h3">Two assure Edward</div>
-                            <p>
-                                Two assure edward whence the was.
-                                Who worthy yet ten boy denote wonder.
-                                Weeks views her sight old tears sorry.
-                                Additions can suspected its concealed put furnished.
-                                Met the why particular devonshire decisively considered partiality.
-                                Certain it waiting no entered is.
-                                Passed her indeed uneasy shy polite appear denied.
-                                Oh less girl no walk. At he spot with five of view.
-                            </p>
-                        </div>
-                        <div class="col-sm-3 col-sm-offset-9">
-                            <p class="pull-right">@Html.ActionLink("Read More", "BlogsThree", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
-                        </div>
+
+            @*--------------------------- Blog Author 2 ---------------------------*@
+            <div class="col-sm-5 col-xs-12" style="background-color:#E4E0FC">
+                <div class="col-xs-3">
+                    <div class="thumbnail" style="margin-top:20px;">
+                        <img class="img-responsive" style="max-height:100px" src="https://nirrep.files.wordpress.com/2014/09/incognito.jpg">
                     </div>
-                    <hr />
                 </div>
-                <div class="panel panel-default col-sm-4">
-                    <div class="panel-body" style="background-color:#C1A7A7">
-                        <div class="col-sm-4">
-                            <div class="thumbnail" style="margin-top:20px;">
-                                <img class="img-responsive" style="max-height:100px" src="https://nirrep.files.wordpress.com/2014/09/incognito.jpg">
-                            </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="h3">C. Baine</div>
-                            <p>
-                                Surrounded affronting favourable no mr.
-                                Lain knew like half she yet joy.
-                                Off fat address attacks his besides.
-                            </p>
-                        </div>
+
+                <div class="col-xs-9">
+                    <h3>B. Wayne</h3>
+                    <p>
+                        Am of mr friendly by strongly peculiar juvenile.
+                        Unpleasant it sufficient simplicity am by friendship no inhabiting.
+                    </p>
+                </div>
+            </div>
+
+            @*--------------------------- Blog Artical 3 ---------------------------*@
+            <div class="col-sm-7 col-xs-12" style="background-color:#C1A7A7">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Two assure Edward</h3>
+                        <p>
+                            Two assure edward whence the was.
+                            Who worthy yet ten boy denote wonder.
+                            Weeks views her sight old tears sorry.
+                            Additions can suspected its concealed put furnished.
+                            Met the why particular devonshire decisively considered partiality.
+                            Certain it waiting no entered is.
+                            Passed her indeed uneasy shy polite appear denied.
+                            Oh less girl no walk. At he spot with five of view.
+                        </p>
                     </div>
+                </div>
+
+                <div class="row">
+                    <p class="pull-right">@Html.ActionLink("Read More", "BlogsThree", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
+
+            @*--------------------------- Blog Author 3 ---------------------------*@
+            <div class="col-sm-5 col-xs-12" style="background-color:#C1A7A7">
+                <div class="col-xs-3">
+                    <div class="thumbnail" style="margin-top:20px;">
+                        <img class="img-responsive" style="max-height:100px" src="https://nirrep.files.wordpress.com/2014/09/incognito.jpg">
+                    </div>
+                </div>
+
+                <div class="col-xs-9">
+                    <h3>A. Penny</h3>
+                    <p>
+                        Surrounded affronting favourable no mr.
+                        Lain knew like half she yet joy.
+                        Off fat address attacks his besides.
+                    </p>
                 </div>
             </div>
         </div>
