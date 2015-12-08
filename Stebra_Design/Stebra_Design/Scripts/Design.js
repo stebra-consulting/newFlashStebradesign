@@ -3,10 +3,6 @@
 $(document).ready(function () {
     $('.carousel').carousel();
 
-    $('.navbar-collapse a').on('click', function () {
-        $('.navbar-toggle').click() //bootstrap 3.x by Richard
-    });
-
     var heights = $(".mydiv").map(function () {
         return $(this).height();
     }).get(),

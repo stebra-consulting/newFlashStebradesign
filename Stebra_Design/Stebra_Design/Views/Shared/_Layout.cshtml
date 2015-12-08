@@ -6,7 +6,6 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/jquery")
-    <script src="~/Scripts/App.js"></script>
     <script src="~/Scripts/Design.js"></script>
     @Scripts.Render("~/bundles/modernizr")
 
@@ -15,7 +14,6 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="noselect">
             <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -27,52 +25,21 @@
                         <img id="navImg" src="~/Images/Logo/stebra_logo_white_notagline.png" />
                     </a>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li>@Html.ActionLink("Hem", "Index", "Home")</li>
                         <li>@Html.ActionLink("Om oss", "About", "Home")</li>
                         <li>@Html.ActionLink("Vad vi har att erbjuda", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Nyheter", "News", "Home")</li>
                     </ul>
-
-                    <ul id="flashNav" class="nav navbar-nav navbar-right">
-                        @*
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        *@
-                        <li><a role="button">NewsFlash</a></li>
-                        @*<li><a id="navNews" role="button">Nyheter</a></li>
-                            <li><a id="navProjects" role="button">Projekt</a></li>
-                            <li><a id="navBlogs" role="button">Blogg</a></li>*@
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </div><!-- /noselect class -->
+                </div>
+            </div>
+        </div>
     </nav>
 
     <div class="container body-content">
         @RenderBody()
         <hr />
-        @*<footer style="background-color:lightgrey; position:absolute; width:100%; bottom:0;">
-                <div class="row">
-                    <img src="~/Images/Logo/stebra_logo_black.png" />
-                </div>
-                <div class="row">
-                    <h3>stebra consulting AB</h3>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-xs-12">
-                        <p><b>Adress:</b></p>
-                        <p>Brännkyrkagatan 95</p>
-                        <p>117 26 Stockholm</p>
-                    </div>
-                    <div class="col-sm-6 col-xs-12">
-                        <p class="text-right"><b>Tel:</b> 0732-613386</p>
-                        <p class="text-right"><b>Mail:</b> info@stebra.se</p>
-                    </div>
-                </div>
-            </footer>*@
     </div>
 
     <footer class="col-xs-12 footer" style="background-color:lightgrey; width:100%; bottom:0; position:inherit">
