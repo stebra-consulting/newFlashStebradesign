@@ -44,3 +44,16 @@ textarea {
     position:absolute;
     bottom:0;
 }
+
+.panel-primary {
+    border:none;
+}
+
+.panel-primary > .panel-heading {
+    background-color: #900000 ;
+    border-color:#900000  !important;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}

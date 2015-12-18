@@ -3,6 +3,7 @@
 $(document).ready(function () {
     $('.carousel').carousel();
 
+
     var heights = $(".mydiv").map(function () {
         return $(this).height();
     }).get(),
